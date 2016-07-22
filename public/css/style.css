@@ -1,0 +1,107 @@
+body {
+  position: relative;
+  display: block;
+  margin: 0;
+  font-family: Roboto;
+  src: url('../fonts/roboto/Roboto-Regular.tff');
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f5f5f5;/*#CAFFD8;*//*palegreen;*/
+}
+
+/* Main Container */
+
+.main-container {
+  position: relative;
+  display: block;
+  /*overflow: scroll;*/
+  padding: 24px;
+  text-align: center;
+}
+
+/* Alarm Table */
+
+.alarm-table {
+  position: relative;
+  width: 100%;
+  /*min-width: 420px;
+  max-width: 600px;*/
+  min-width: 420px;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 1px 4px -2px #969696;
+}
+
+.alarm-table thead {
+  font-weight: bold;
+  color: #fff;
+  background-color: lightgreen;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+.alarm-table tbody tr:hover {
+  /*background-color: #f5f5f5;*/
+  cursor: pointer;
+}
+
+.alarm-table td {
+  padding: 16px;
+}
+
+.alarm-tr-warnning {
+  background-color: rgba(229, 104, 107, 0.2);
+}
+
+.alarm-tr-warnning:hover {
+  background-color: rgba(229, 104, 107, 0.8);
+}
+
+.alarm-tr-clear {
+  background-color: #FFF;
+}
+
+.alarm-table__button {
+  display: inline-block;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 24px;
+  color: #FFF;
+  background-color: lightgreen;
+  box-shadow: 0 1px 4px -2px #969696;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.alarm-table__button:hover {
+  box-shadow: 0 1px 16px -2px #969696;
+}
+
+.table-scoll {
+    height:150px;
+  overflow:auto;
+}
+/* Splash Screen */
+
+.splash-screen {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #CAFFD8;/*palegreen;*/
+}
+
+.splash-screen__logo {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: block;
+  /*width: 500px;
+  height: 256px;*/
+  margin: auto;
+}
